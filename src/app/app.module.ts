@@ -9,6 +9,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
+import { ServicesComponent } from './components/services/services.component';
+import { HowitworkComponent } from './components/howitwork/howitwork.component';
+import { ModularComponent } from './components/modular/modular.component';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { ContactusComponent } from './components/contactus/contactus.component';
     NavbarComponent,
     AboutusComponent,
     GalleryComponent,
-    ContactusComponent
+    ContactusComponent,
+    ServicesComponent,
+    HowitworkComponent,
+    ModularComponent
   ],
   imports: [
     BrowserModule,

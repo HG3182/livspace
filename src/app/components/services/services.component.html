@@ -1,0 +1,71 @@
+<div class="px-4 sm:px-6 lg:px-20 py-10 bg-white">
+    <!-- Category Scroll Menu -->
+    <div class="flex flex-col items-center space-y-4 mb-10">
+      <div class="flex items-center space-x-2 w-full justify-center">
+        <button class="p-2 rounded-full border border-purple-400 text-purple-600 hover:bg-purple-100" (click)="scrollLeft()">
+          &lt;
+        </button>
+        <div
+          #scrollContainer
+          class="flex space-x-4 whitespace-nowrap overflow-x-auto no-scrollbar max-w-full px-2"
+        >
+          <span
+            *ngFor="let cat of categories"
+            class="cursor-pointer px-4 py-2 text-sm font-medium rounded-full"
+            [ngClass]="{
+              'bg-purple-600 text-white': activeCategory === cat,
+              'text-gray-600 hover:bg-purple-100': activeCategory !== cat
+            }"
+            (click)="filterDesigns(cat)"
+          >
+            {{ cat }}
+          </span>
+        </div>
+        <button class="p-2 rounded-full border border-purple-400 text-purple-600 hover:bg-purple-100" (click)="scrollRight()">
+          &gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Dynamic Category Description -->
+<div class="mb-8 text-center max-w-3xl mx-auto">
+    <h2 class="text-2xl font-bold text-gray-800 mb-2">{{ activeCategory }}</h2>
+    <p class="text-gray-600 text-sm">
+      {{ categoryDescriptions[activeCategory] || 'Explore designs and ideas to enhance your space.' }}
+    </p>
+  </div>
+  
+  
+    <!-- Cards Grid -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div
+        *ngFor="let design of filteredDesigns"
+        class="border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-md transition-shadow duration-300"
+      >
+        <img
+          [src]="design.image"
+          alt="Room"
+          class="w-full h-60 object-cover"
+        />
+        <div class="p-5 space-y-3">
+          <h3 class="text-base font-semibold text-gray-800">
+            {{ design.title }}
+          </h3>
+          <p class="text-sm text-gray-500">Size: {{ design.size }}</p>
+          <!-- <div class="flex space-x-3 mt-4">
+            <button
+              class="border border-purple-600 text-purple-600 px-4 py-2 rounded-full text-sm hover:bg-purple-50 transition"
+            >
+              Book Free Consultation
+            </button>
+            <button
+              class="bg-purple-600 text-white px-4 py-2 rounded-full text-sm hover:bg-purple-700 transition"
+            >
+              Get Quote
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,217 @@
+<div class="relative isolate px-6 lg:px-8 bg-white overflow-hidden bg-cover bg-center"
+     style="background-image: url('howitwork.jpg'); height: 80vh;">
+    <!-- Dark overlay for contrast -->
+    <!-- <div class="absolute inset-0 bg-black bg-opacity-10 z-0"></div> -->
+  
+    <!-- Content Area -->
+    <div class="bg-[#0000005e] w-full min-h-screen px-6 lg:px-8 bg-cover bg-center flex items-center justify-center">
+        <!-- <div class="relative z-10 text-center max-w-2xl bg-[#00000049] p-8 rounded-xl"> -->
+          <!-- <p class="text-base font-semibold text-purple-600">Welcome to Ennov8Studio</p> -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white drop-shadow-md">
+            How It Works
+          </h1>
+        </div>
+      </div>
+
+
+
+<div class="bg-white py-12 px-4 sm:px-8 lg:px-20 text-center">
+    <!-- Title and Subtitle -->
+    <h2 class="text-3xl font-bold text-gray-800">
+      <span class="text-purple-600 border-l-4 border-purple-600 pl-2">Your dream home in 5 steps!</span>
+    </h2>
+    <p class="text-gray-600 mt-2 text-base">Looking to design your home interiors? Here's how you can get started.</p>
+  
+    <!-- Steps -->
+    <div class="flex flex-wrap justify-center gap-6 mt-10">
+      <div *ngFor="let step of steps" class="flex flex-col items-center text-sm text-gray-700 max-w-[90px]">
+        <img [src]="step.image" [alt]="step.label" class="w-16 h-16 rounded-full border-2 border-purple-200 mb-2" />
+        <!-- <span class="text-gray-900 font-semibold">{{ step.number }}</span> -->
+        <span class="mt-1">{{ step.label }}</span>
+      </div>
+    </div>
+  
+    <!-- CTA -->
+    <div class="mt-8">
+      <a routerLink="/contactus">
+        <button class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition">
+            START YOUR PROJECT NOW
+          </button>
+      </a>
+    </div>
+    <div class="my-20 border-t border-purple-800"></div>
+  
+    <!-- Meet Designer Section -->
+    <!-- Section Wrapper -->
+<div class="bg-white py-16 px-4 sm:px-6 lg:px-20">
+
+  
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl mx-auto">
+      <img src="hiw1.jpg" 
+           alt="Meet Designer" 
+           class="w-full max-w-sm object-contain rounded-xl shadow-lg" />
+           
+      <div class="md:w-1/2 space-y-6">
+        <h3 class="text-3xl font-bold text-gray-800">Meet your designer</h3>
+        <div class="space-y-5">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-700">• It all begins with a form</h4>
+            <p class="text-base text-gray-600">
+              Let's get acquainted. The more we learn about you, the better we can design your home.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-gray-700">• Get free consultation</h4>
+            <p class="text-base text-gray-600">
+              Talk to your designer and get personalised designs and quote for your dream home.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Divider -->
+    
+  
+    <!-- Step 2: Book Livspace -->
+    <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-12 max-w-6xl mx-auto">
+      <img src="hiw2.avif" 
+           alt="Book Livspace" 
+           class="w-full max-w-sm object-contain rounded-xl shadow-lg" />
+           
+      <div class="md:w-1/2 space-y-6">
+        <h3 class="text-3xl font-bold text-gray-800">Book Livspace</h3>
+        <div class="space-y-5">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-700">• Pay the booking amount to seal the deal</h4>
+            <p class="text-base text-gray-600">
+              Once you're happy with what we've proposed, pay 10% of the final quote or Rs.25,000 (whichever is higher) to book us.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-gray-700">• Finalise your home design</h4>
+            <p class="text-base text-gray-600">
+              It's time to deep dive into the nitty-gritties & pick your favorite materials, finishes, etc.
+              Interim payments will be requested based on project scope, value, and timelines during the booking and design phase.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl mx-auto">
+        <img src="hiw3.jpg" 
+             alt="Meet Designer" 
+             class="w-full max-w-sm object-contain rounded-xl shadow-lg" />
+             
+        <div class="md:w-1/2 space-y-6">
+          <h3 class="text-3xl font-bold text-gray-800">Place the order</h3>
+          <div class="space-y-5">
+            <div>
+              <h4 class="text-lg font-semibold text-gray-700">• Confirm your order with 60% payment </h4>
+              <p class="text-base text-gray-600">
+                Finalise the design by making a cumulative 60% payment, and your project is now off to a good start.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-700">• Work commences</h4>
+              <p class="text-base text-gray-600">
+                Civil work begins on site. Keep a tab on your project status on 'My Account'.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  </div>
+   
+  </div>
+
+
+
+  <div class="w-full bg-purple-800 text-white flex items-center justify-center py-12 mt-8">
+    <h1 class="text-2xl font-bold text-center">🎉 Great! You're halfway there.</h1>
+  </div>
+  
+
+
+  <div class="bg-white py-12 px-4 sm:px-8 lg:px-20 text-center">
+  
+<div class="bg-white py-16 px-4 sm:px-6 lg:px-20">
+
+  
+
+
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl mx-auto">
+        <img src="hiw4.avif" 
+             alt="Meet Designer" 
+             class="w-full max-w-sm object-contain rounded-xl shadow-lg" />
+             
+        <div class="md:w-1/2 space-y-6">
+          <h3 class="text-3xl font-bold text-gray-800">Final installations
+            </h3>
+          <div class="space-y-5">
+            <div>
+              <h4 class="text-lg font-semibold text-gray-700">• Pay 100% at intimation of material dispatch</h4>
+              <p class="text-base text-gray-600">
+                Once the materials are ready for dispatch, you'll be intimated. Make the balance payment and we'll head to the last leg of your project. 
+              </p>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-700">• Installation</h4>
+              <p class="text-base text-gray-600">
+                Orders get delivered on-site and installation happens as per design
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  </div>
+   
+  </div>
+
+
+  <div class="w-full bg-purple-800 text-white flex items-center justify-center py-12 mt-8">
+    <h1 class="text-2xl font-bold text-center">🎉 Hurrah! Complete payment has been made! </h1>
+  </div>
+  
+
+
+  <div class="bg-white py-12 px-4 sm:px-8 lg:px-20 text-center">
+  
+<div class="bg-white py-16 px-4 sm:px-6 lg:px-20">
+
+  
+
+
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl mx-auto">
+        <img src="hiw5.jpg" 
+             alt="Meet Designer" 
+             class="w-full max-w-sm object-contain rounded-xl shadow-lg" />
+             
+        <div class="md:w-1/2 space-y-6">
+          <h3 class="text-3xl font-bold text-gray-800">Move in!
+            </h3>
+          <div class="space-y-5">
+            <div>
+              <!-- <h4 class="text-lg font-semibold text-gray-700">• Pay 100% at intimation of material dispatch</h4> -->
+              <p class="text-base text-gray-600">
+                Your dream home is now a reality! It's time to make new memories! Do avail the free professional photoshoot session of your #LivspaceHome.
+              </p>
+            </div>
+            <!-- <div>
+              <h4 class="text-lg font-semibold text-gray-700">• Installation</h4>
+              <p class="text-base text-gray-600">
+                Orders get delivered on-site and installation happens as per design
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+  
+  </div>
+   
+  </div>

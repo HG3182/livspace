@@ -4,6 +4,9 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
+import { ServicesComponent } from './components/services/services.component';
+import { HowitworkComponent } from './components/howitwork/howitwork.component';
+import { ModularComponent } from './components/modular/modular.component';
 
 const routes: Routes = [
   {
@@ -21,6 +24,18 @@ const routes: Routes = [
   {
     path: 'contactus',
     component: ContactusComponent
+  },
+  {
+    path: 'services',
+    component: ServicesComponent
+  },
+  {
+    path: 'howitwork',
+    component: HowitworkComponent
+  },
+  {
+    path: 'modular',
+    component: ModularComponent
   }
 ];
 
