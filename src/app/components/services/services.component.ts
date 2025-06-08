@@ -292,7 +292,7 @@ export class ServicesComponent {
   categoryDescriptions: { [key: string]: string } = {
     'Living room': 'A comfortable and stylish living room is the heart of any home. Discover modern layouts, colors, and furniture setups.',
     'Bathroom': 'Bathrooms should be a perfect blend of functionality and elegance. Explore minimal, luxury, and spa-inspired bathroom ideas.',
-    'Homes by Livspace': 'Curated full-home interior packages tailored to your lifestyle and budget. Explore what Livspace can do for you.',
+    'Homes by Moduluxe': 'Curated full-home interior packages tailored to your lifestyle and budget. Explore what Moduluxe can do for you.',
     'Wardrobe': 'Organized wardrobes designed to fit your space and lifestyle. Sliding, hinged, walk-in — explore them all here.',
     'Study Room Designs': 'Create the perfect study environment with functional desks, ample storage, and inspiring decor ideas.',
     "Kid's Bedroom": 'Colorful and creative bedroom ideas for kids that spark imagination while offering smart storage.',
